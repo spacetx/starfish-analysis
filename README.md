@@ -24,3 +24,10 @@ def process_fov(fov_num: int, experiment_str: str):
 At the top of the file the recipe should also include the url location of the full experiment data. 
 
 An example `recipe.py` file can be found [here](recipes/iss/recipe.py)
+
+
+## Special processing 
+If an experiment requires processing data on a per round/ch/zplane basis within a fov the single method within
+the provided recipe file should include the round/ch/zplane number as an extra parameter to the `process_fov` method. 
+
+An example of a `recipe.py` that processes per round within a fov can be found [here](recipes/smFish/recipe.py)
