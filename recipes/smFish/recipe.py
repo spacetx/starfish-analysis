@@ -2,7 +2,7 @@ import starfish
 from starfish.types import Axes
 from starfish.core.imagestack import indexing_utils
 
-exp_str = "https://d2nhj9g34unfro.cloudfront.net/browse/20190111/allen_mouse_panel_1/experiment.json"
+"https://d2nhj9g34unfro.cloudfront.net/browse/20190111/allen_mouse_panel_1/experiment.json"
 
 
 def process_fov(fov_num: int, round_num: int,  experiment_str: str):
