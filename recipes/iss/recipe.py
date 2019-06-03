@@ -2,8 +2,10 @@ import numpy as np
 import starfish
 from starfish.types import Axes
 
+exp_str = "https://d2nhj9g34unfro.cloudfront.net/xiaoyan_qian/ISS_human_HCA_07_MultiFOV/main_files/experiment.json"
 
-def process_fov(field_num: int, experiment_str: str):
+
+def process_fov(fov_num: int, experiment_str: str):
     """Process a single field of view of ISS data
     Parameters
     ----------
@@ -17,7 +19,7 @@ def process_fov(field_num: int, experiment_str: str):
     DecodedSpots :
         tabular object containing the locations of detected spots.
     """
-    fov_str: str = f"fov_{int(field_num):03d}"
+    fov_str: str = f"fov_{int(fov_num):03d}"
 
     # load experiment
     experiment = starfish.Experiment.from_json(experiment_str)
